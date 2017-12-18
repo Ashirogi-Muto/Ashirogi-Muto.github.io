@@ -1,0 +1,155 @@
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto Regular'), 
+       local('Roboto-Regular'), 
+       url('http://themes.googleusercontent.com/static/fonts/roboto/v11/2UX7WLTfW3W8TclTUvlFyQ.woff') 
+       format('woff');
+}
+
+body{
+	 overflow-x:hidden; 
+	 font-family: Roboto;
+   background-color: #F5F2F0;
+}
+.side-bar{
+	border-right: 2px solid black;
+	height: 100%;
+	position: fixed;
+	font-family: Roboto;
+	background-color: #FFFFFF;
+}
+
+.home{
+	margin-top: 200px;
+}
+.same{
+	color: #383838;
+    display: block;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 50px;
+    text-align: center;
+    font-weight: bolder;
+    
+}
+
+/* unvisited link */
+a:link {
+    text-decoration: none;
+    color: black;
+}
+
+/* visited link */
+a:visited {
+ 	text-decoration: none;
+  color: black;
+}
+
+/* mouse over link */
+a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+/* selected link */
+a:active {
+    text-decoration: none;
+    color: black;
+}
+
+.content{
+	margin-top: 3%;
+	float: right;
+	height: 100%;
+}
+.intro{
+	width: 80%;
+	background-color: #00897b;
+	font-size: 20px;
+  padding: 25px 0px 25px 25px;
+}
+hr.style1{
+	border-top: 3px solid #8c8b8b;
+}
+.git{
+	cursor: pointer;
+	text-align: center;
+	font-size: 100px;
+	padding-left: 5%;
+}
+.text{
+	line-height: 1.4;
+	font-size:20px;
+	text-align: justify;
+	letter-spacing: 2px;
+}
+#ski{
+  margin-top: 3%;
+}
+.techs{
+  margin-top: 5%;
+}
+.skill{
+	font-size: 35px;
+  width: 80%;
+  padding-left: 1% !important;
+	background-color: #009688;
+}
+.conn{
+  width: 80%;
+  margin-top: 20px;
+	font-size: 35px;
+  background-color: #4db6ac;
+  padding: 20px 0px 15px 15px;
+  
+}
+.cont{
+	font-size: 20px;
+}
+#gitHub{
+  display: none;
+}
+.main-cards{
+  margin-top: 3%;
+}
+.card-title{
+  text-align: center;
+}
+.card{
+  -moz-box-shadow: 0 0 3px #ccc;
+  -webkit-box-shadow: 0 0 3px #ccc;
+  box-shadow: 0 0 20px #ccc;
+}
+#cordova{
+  height: 310px;
+}
+@media only screen and (max-width: 900px) {
+
+    .conn{
+    	 background-color: #4db6ac;
+    }
+    .skill{
+    	background-color: #009688;
+      margin-left: 2%;
+    }
+    .intro{
+    	background-color: #00897b;
+    }
+    .side-bar{
+      display: none;
+    }
+    #gitHub{
+      display: block;
+    }
+    #php{
+      height: 420px;
+    }
+    #con{
+      margin-left: 2%;
+    }
+    #cordova{
+      height: 340px;
+    }
+}
