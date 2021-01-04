@@ -1,155 +1,115 @@
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Roboto Regular'), 
-       local('Roboto-Regular'), 
-       url('http://themes.googleusercontent.com/static/fonts/roboto/v11/2UX7WLTfW3W8TclTUvlFyQ.woff') 
-       format('woff');
-}
-
-body{
-	 overflow-x:hidden; 
-	 font-family: Roboto;
-   background-color: #F5F2F0;
-}
-.side-bar{
-	border-right: 2px solid black;
-	height: 100%;
-	position: fixed;
-	font-family: Roboto;
-	background-color: #FFFFFF;
-}
-
-.home{
-	margin-top: 200px;
-}
-.same{
-	color: #383838;
-    display: block;
-    font-size: 25px;
-    font-weight: 600;
-    line-height: 50px;
-    text-align: center;
-    font-weight: bolder;
-    
-}
-
-/* unvisited link */
-a:link {
-    text-decoration: none;
-    color: black;
-}
-
-/* visited link */
-a:visited {
- 	text-decoration: none;
-  color: black;
-}
-
-/* mouse over link */
-a:hover {
-    text-decoration: none;
-    color: black;
-}
-
-/* selected link */
-a:active {
-    text-decoration: none;
-    color: black;
-}
-
-.content{
-	margin-top: 3%;
-	float: right;
-	height: 100%;
-}
-.intro{
-	width: 80%;
-	background-color: #00897b;
-	font-size: 20px;
-  padding: 25px 0px 25px 25px;
-}
-hr.style1{
-	border-top: 3px solid #8c8b8b;
-}
-.git{
-	cursor: pointer;
+body {
+	font-family: 'Space Mono', monospace;
 	text-align: center;
-	font-size: 100px;
-	padding-left: 5%;
 }
-.text{
-	line-height: 1.4;
-	font-size:20px;
-	text-align: justify;
-	letter-spacing: 2px;
-}
-#ski{
-  margin-top: 3%;
-}
-.techs{
-  margin-top: 5%;
-}
-.skill{
-	font-size: 35px;
-  width: 80%;
-  padding-left: 1% !important;
-	background-color: #009688;
-}
-.conn{
-  width: 80%;
-  margin-top: 20px;
-	font-size: 35px;
-  background-color: #4db6ac;
-  padding: 20px 0px 15px 15px;
-  
-}
-.cont{
-	font-size: 20px;
-}
-#gitHub{
-  display: none;
-}
-.main-cards{
-  margin-top: 3%;
-}
-.card-title{
-  text-align: center;
-}
-.card{
-  -moz-box-shadow: 0 0 3px #ccc;
-  -webkit-box-shadow: 0 0 3px #ccc;
-  box-shadow: 0 0 20px #ccc;
-}
-#cordova{
-  height: 310px;
-}
-@media only screen and (max-width: 900px) {
 
-    .conn{
-    	 background-color: #4db6ac;
-    }
-    .skill{
-    	background-color: #009688;
-      margin-left: 2%;
-    }
-    .intro{
-    	background-color: #00897b;
-    }
-    .side-bar{
-      display: none;
-    }
-    #gitHub{
-      display: block;
-    }
-    #php{
-      height: 420px;
-    }
-    #con{
-      margin-left: 2%;
-    }
-    #cordova{
-      height: 340px;
-    }
+.portfolio-body {
+	text-align: left;
+	width: 800px;
+	margin: 0 auto;
+}
+
+@media only screen and (max-width: 800px) {
+	.portfolio-body {
+		width: 80%;
+	}
+	.portfolio-body .info .contact-info {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+.portfolio-body .info {
+	padding: 0.5rem;
+}
+
+.portfolio-body .info .info-header {
+	text-align: center;
+}
+
+.portfolio-body .portfolio-picture img {
+	width: 30%;
+	border-radius: 50%;
+}
+
+.portfolio-body .info .contact-info {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.portfolio-body .info .contact-info .contact-body {
+	display: flex;
+	align-items: center;
+}
+
+.portfolio-body .info .contact-info .contact-body .contact-text {
+	margin-left: 0.5rem;
+}
+
+.portfolio-body .info .contact-info .contact-body .contact-text p {
+	margin: 0;
+}
+
+.section-header {
+	text-align: center;
+}
+
+.section-header h4 {
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+	padding: 0.5rem;
+	text-transform: uppercase;
+}
+
+.section-header p {
+	text-align: left;
+}
+
+.section-content {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border: 1px solid #000;
+	border-radius: 10px;
+	padding: 0.5rem;
+}
+
+.section-content:not(:first-of-type) {
+	margin-top: 0.5rem;
+}
+
+span.content-highlight {
+	font-weight: bold;
+}
+
+.section-content p {
+	margin: 0;
+}
+
+.section-content p a {
+	text-decoration: none;
+}
+
+.skill-content {
+	display: flex;
+	align-items: center;
+	border: 1px solid #000;
+	padding: 0.5rem;
+	border-radius: 10px;
+	margin-top: 0.5rem;
+}
+
+.skill-content:hover, .section-content:hover {
+	transform: translate(0.25rem, -0.25rem);
+	box-shadow: 3px 3px 0 rgba(0, 0, 0, 1);
+	transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.skill-content h5 {
+	margin: 0;
+}
+
+.skill-content p {
+	margin: 0 0 0 0.5rem;
 }
