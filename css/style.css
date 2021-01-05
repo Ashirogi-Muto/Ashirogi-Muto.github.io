@@ -16,16 +16,6 @@ body {
 	margin: 0 auto;
 }
 
-@media only screen and (max-width: 800px) {
-	.portfolio-body {
-		width: 80%;
-	}
-	.portfolio-body .info .contact-info {
-		display: flex;
-		flex-direction: column;
-	}
-}
-
 .portfolio-body .info {
 	padding: 0.5rem;
 	text-align: center;
@@ -39,6 +29,10 @@ body {
 .contact-info .contact-body .contact-text a {
 	color: #000;
 	text-decoration: underline;
+}
+
+.portfolio-body .portfolio-picture {
+	margin-left: 4rem;
 }
 
 .portfolio-body .portfolio-picture img {
@@ -181,4 +175,27 @@ span.content-highlight {
 
 .skill-content p {
 	margin: 0 0 0 0.5rem;
+}
+
+@media only screen and (max-width: 800px) {
+	.portfolio-body {
+		width: 80%;
+	}
+	.portfolio-body .info .contact-info {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+@media only screen and (max-width: 425px) {
+	.portfolio-body .info .info-header .switch {
+		width: 56px;
+		height: 30px;
+	}
+
+	.portfolio-body .info .info-header .switch span.slider::before {
+		height: 20px;
+		width: 20px;
+	}
+
 }
