@@ -57,15 +57,15 @@ body {
 	height: 0;
 }
 
-.portfolio-body .info .info-header .switch input:checked + .slider {
+.portfolio-body .info .info-header .switch input:checked+.slider {
 	background-color: #000;
 }
 
-.portfolio-body .info .info-header .switch input:focus + .slider {
+.portfolio-body .info .info-header .switch input:focus+.slider {
 	box-shadow: 0 0 1px #000;
 }
 
-.portfolio-body .info .info-header .switch input:checked + .slider::before {
+.portfolio-body .info .info-header .switch input:checked+.slider::before {
 	-webkit-transform: translateX(26px);
 	-ms-transform: translateX(26px);
 	transform: translateX(26px);
@@ -163,7 +163,12 @@ span.content-highlight {
 	margin-top: 0.5rem;
 }
 
-.skill-content:hover, .section-content:hover {
+.skill-content:hover,
+.section-content:hover {
+	-webkit-transform: translate(0.25rem, -0.25rem);
+	-moz-transform: translate(0.25rem, -0.25rem);
+	-ms-transform: translate(0.25rem, -0.25rem);
+	-o-transform: translate(0.25rem, -0.25rem);
 	transform: translate(0.25rem, -0.25rem);
 	box-shadow: 3px 3px 0 rgba(0, 0, 0, 1);
 	transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -181,6 +186,7 @@ span.content-highlight {
 	.portfolio-body {
 		width: 80%;
 	}
+
 	.portfolio-body .info .contact-info {
 		display: flex;
 		flex-direction: column;
