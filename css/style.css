@@ -3,6 +3,13 @@ body {
 	text-align: center;
 }
 
+body {
+	background-color: #fff;
+	-webkit-transition: background-color 500ms linear;
+	-ms-transition: background-color 500ms linear;
+	transition: background-color 500ms linear;
+}
+
 .portfolio-body {
 	text-align: left;
 	width: 800px;
@@ -21,15 +28,76 @@ body {
 
 .portfolio-body .info {
 	padding: 0.5rem;
+	text-align: center;
 }
 
 .portfolio-body .info .info-header {
 	text-align: center;
+	display: flex;
+}
+
+.contact-info .contact-body .contact-text a {
+	color: #000;
+	text-decoration: underline;
 }
 
 .portfolio-body .portfolio-picture img {
 	width: 30%;
 	border-radius: 50%;
+}
+
+.portfolio-body .info .info-header .toggle-theme-switch {
+	height: 100%;
+}
+
+.portfolio-body .info .info-header .switch {
+	position: relative;
+	display: inline-block;
+	width: 60px;
+	height: 34px;
+}
+
+.portfolio-body .info .info-header .switch input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+.portfolio-body .info .info-header .switch input:checked + .slider {
+	background-color: #000;
+}
+
+.portfolio-body .info .info-header .switch input:focus + .slider {
+	box-shadow: 0 0 1px #000;
+}
+
+.portfolio-body .info .info-header .switch input:checked + .slider::before {
+	-webkit-transform: translateX(26px);
+	-ms-transform: translateX(26px);
+	transform: translateX(26px);
+	background-color: #fff;
+}
+
+.portfolio-body .info .info-header .switch span.slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #ccc;
+	transition: .4s;
+}
+
+.portfolio-body .info .info-header .switch span.slider::before {
+	position: absolute;
+	content: "";
+	height: 26px;
+	width: 26px;
+	left: 4px;
+	bottom: 4px;
+	background-color: #000;
+	transition: .4s;
 }
 
 .portfolio-body .info .contact-info {
@@ -75,6 +143,11 @@ body {
 	padding: 0.5rem;
 }
 
+.section-content p a {
+	color: #000;
+	text-decoration: underline;
+}
+
 .section-content:not(:first-of-type) {
 	margin-top: 0.5rem;
 }
@@ -85,10 +158,6 @@ span.content-highlight {
 
 .section-content p {
 	margin: 0;
-}
-
-.section-content p a {
-	text-decoration: none;
 }
 
 .skill-content {

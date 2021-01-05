@@ -1,0 +1,41 @@
+body.theme-dark {
+	background-color: #000;
+	color: #fff;
+	-webkit-transition: background-color 500ms linear;
+	-ms-transition: background-color 500ms linear;
+	transition: background-color 500ms linear;
+}
+
+body.theme-dark .contact-info .contact-body .contact-text a {
+	color: #fff;
+	text-decoration: underline;
+}
+
+body.theme-dark .portfolio-body .info .info-header .switch span.slider {
+	border: 1px solid #fff;
+}
+
+body.theme-dark .portfolio-body .info .info-header .switch input:checked+.slider::before {
+	background-color: #fff;
+}
+
+body.theme-dark .section-header h4 {
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+}
+
+body.theme-dark .section-content p a {
+	color: #fff;
+	text-decoration: underline;
+}
+
+body.theme-dark .section-content,
+body.theme-dark .skill-content {
+	border: 1px solid #fff;
+}
+
+body.theme-dark .skill-content:hover,
+body.theme-dark .section-content:hover {
+	box-shadow: 3px 3px 0 rgba(255, 255, 255, 1);
+	transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
