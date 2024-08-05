@@ -36,6 +36,10 @@ body.theme-dark .skill-content {
 	border: 1px solid #fff;
 }
 
+body.theme-dark .section-body a {
+	color: #fff;
+}
+
 body.theme-dark .skill-content:hover,
 body.theme-dark .section-content:hover {
 	box-shadow: 3px 3px 0 rgba(255, 255, 255, 1);
